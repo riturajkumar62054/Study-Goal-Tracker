@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Study Goal Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <i><b><h1>STUDY GOAL TRACKER</h1></b></i>
+      <p>Manage your study goals</p>
+    </header>
+
+    <section class="add-goal">
+      <h2>Add New Goal</h2>
+      <form id="addForm">
+        <input id="titleInput" type="text" placeholder="Goal title" required />
+        <input id="priorityInput" type="number" placeholder="Priority (1 = highest)" min="1" required />
+        <button type="submit">Add Goal</button>
+      </form>
+    </section>
+
+    <section class="controls">
+      <input id="searchInput" type="text" placeholder="Search by title..." />
+      <button id="searchBtn">Search</button>
+      <button id="clearSearchBtn">Clear</button>
+      <button id="clearCompleted">Clear all goals</button>
+      <div id="totals" class="totals"></div>
+    </section>
+
+    <section class="lists">
+      <div class="list pending">
+        <h3>Pending Goals</h3>
+        <ul id="pendingList"></ul>
+      </div>
+
+      <div class="list completed">
+        <h3>Completed Goals</h3>
+        <ul id="completedList"></ul>
+      </div>
+    </section>
+
+    <footer>
+      <small>ULTIMATE COMPANION FOR STUDENTS!!😍😎🤩</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
